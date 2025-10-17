@@ -1,4 +1,5 @@
 # ResoPhys
-Official implementation of ResoPhys (IEEE JBHI). A novel unsupervised and plug-and-play framework for remote photoplethysmography (rPPG) measurement from facial videos of arbitrary resolution.
+Official implementation of ResoPhys (IEEE JBHI), an unsupervised, plug-and-play framework for rPPG measurement from arbitrary-resolution facial videos. By strategically decoupling resolution handling via adaptive feature capture and restoration, ResoPhys enhances the robustness of existing backbones in arbitrary-resolution scenarios.
 
-ResoPhys is a novel framework for remote photoplethysmography (rPPG) that robustly handles facial videos of any resolution. This addresses a key challenge in real-world scenarios where camera-to-subject distances fluctuate. Our approach is fully unsupervised and designed as a plug-and-play module to enhance existing rPPG models.
+
+ResoPhys processes a facial video through two parallel branches at randomly selected resolutions. In each branch, the Arbitrary-Resolution Feature Capture module uses dynamic, scale-aware convolutions to adaptively extract features from the variable-sized input. Subsequently, the Arbitrary-Resolution Feature Upsampling module intelligently restores these features to a standardized format, recovering crucial sub-pixel details. The entire framework is trained via a Multi-Resolution Contrastive Loss, learning a resolution-invariant representation in an unsupervised manner.
