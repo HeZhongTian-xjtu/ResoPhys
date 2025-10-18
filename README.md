@@ -19,20 +19,21 @@ ResoPhys (Ours) achieves state-of-the-art performance, outperforming previous su
 
 We tested performance on the COHFACE dataset at various resolutions. While other methods degrade significantly, ResoPhys maintains high accuracy even at an extremely low resolution of 16x16, proving its robustness.
 
-<p align = "center"> <img src="https://github.com/HeZhongTian-xjtu/ResoPhys/blob/main/table_plt/arbitrary_resolution.png" width="800" /> </p>
+<p align = "center"> <img src="https://github.com/HeZhongTian-xjtu/ResoPhys/blob/main/table_plt/arbitrary_resolution.png" width="400" /> </p>
+
 ### 3\. Signal Visualization
 
 This visualization shows that our predicted rPPG waveform (red) and its Power Spectral Density (PSD) closely match the ground truth (blue), even as the input video resolution decreases to 32x32 and 16x16.
 
-<p align = "center"> <img src="https://github.com/HeZhongTian-xjtu/ResoPhys/blob/main/table_plt/waveform.png" width="800" /> </p>
+<p align = "center"> <img src="https://github.com/HeZhongTian-xjtu/ResoPhys/blob/main/table_plt/waveform.png" width="400" /> </p>
 
 ### 4\. Plug-and-Play Capability
 
 ResoPhys acts as a universal front-end. When plugged into various backbones (CNN-based PhysNet, Transformer-based PhysFormer, Mamba-based RhythmMamba), it consistently and significantly boosts their performance across all resolutions.
 
-<p align = "center"> <img src="https://github.com/HeZhongTian-xjtu/ResoPhys/blob/main/table_plt/plug_and_play_testing.png" width="800" /> </p>
+<p align = "center"> <img src="https://github.com/HeZhongTian-xjtu/ResoPhys/blob/main/table_plt/plug_and_play_testing.png" width="400" /> </p>
 
-### 5\. Ablation Study: Core Components
+### 5\. Ablation Study
 
 This ablation study validates our design. The full model (Exp4) shows the best performance, demonstrating the individual contributions of the ARFU module (vs. Exp1), the Scale-aware CNN (vs. Exp2), and the Mask-guided Map (vs. Exp3).
 
@@ -44,4 +45,4 @@ We analyzed the impact of the number of experts (E) in our dynamic convolutions.
 
 <p align = "center"> <img src="https://github.com/HeZhongTian-xjtu/ResoPhys/blob/main/table_plt/expert_table.png" width="800" /> </p>
 
-<p align = "center"> <img src="https://github.com/HeZhongTian-xjtu/ResoPhys/blob/main/table_plt/expert_plg.png" width="600" /> </p>
+<p align = "center"> <img src="https://github.com/HeZhongTian-xjtu/ResoPhys/blob/main/table_plt/expert_plg.png" width="300" /> </p>
